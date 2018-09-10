@@ -69,6 +69,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\AccountType.cs" />
+    <Compile Include="Model\Ballot.cs" />
+    <Compile Include="Model\Candidate.cs" />
+    <Compile Include="Model\Party.cs" />
+    <Compile Include="Model\Position.cs" />
+    <Compile Include="Model\Vote.cs" />
+    <Compile Include="Model\Voter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

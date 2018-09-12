@@ -2,6 +2,6 @@
 {
     public interface IWorkspaceViewModel : IPageViewModel
     {
-        IWorkspacePageViewModel CurrentPage { get; set; }
+        IWorkspacePageViewModel CurrentPage { get; }
     }
 }

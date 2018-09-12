@@ -16,7 +16,7 @@
 
         public ILoginPageViewModel CreateLoginPage(MainWindowViewModel mainWindowViewModel)
         {
-            return null;
+            return new LoginPageViewModel();
         }
 
         public IAddEditPageViewModel<T> CreateAddEditPage<T>(IWorkspaceViewModel mainWindowViewModel)
@@ -41,7 +41,7 @@
 
         public ILoginBannerViewModel CreateLoginBanner()
         {
-            return null;
+            return new LoginBannerViewModel();
         }
     }
 }

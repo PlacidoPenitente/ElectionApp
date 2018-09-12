@@ -26,6 +26,7 @@ namespace ElectionApp.ViewModel
         }
         
         public string Title { get; }
+        public IBannerViewModel Banner { get; }
 
         public IWorkspacePageViewModel CurrentPage
         {

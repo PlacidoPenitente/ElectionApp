@@ -110,17 +110,19 @@
     <Compile Include="ViewModel\IWorkspaceBannerViewModel.cs" />
     <Compile Include="ViewModel\IWorkspaceViewModel.cs" />
     <Compile Include="ViewModel\IWorkspacePageViewModel.cs" />
+    <Compile Include="ViewModel\LoginBannerViewModel.cs" />
+    <Compile Include="ViewModel\LoginPageViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\Repository.cs" />
     <Compile Include="ViewModel\WorkspaceViewModel.cs" />
-    <Compile Include="View\BannerView.xaml.cs">
-      <DependentUpon>BannerView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\LoginBannerView.xaml.cs">
       <DependentUpon>LoginBannerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\LoginPageView.xaml.cs">
       <DependentUpon>LoginPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkspaceBannerView.xaml.cs">
+      <DependentUpon>WorkspaceBannerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\WorkspaceView.xaml.cs">
       <DependentUpon>WorkspaceView.xaml</DependentUpon>
@@ -140,7 +142,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\BannerView.xaml">
+    <Page Include="Resource\Styles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\LoginPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WorkspaceBannerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

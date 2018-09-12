@@ -12,6 +12,7 @@
         {
             _loginPage = Repository.Instance.CreateLoginPage(this);
             _workspacePage = Repository.Instance.CreateWorkspacePage(this);
+            GotoLoginPage();
         }
 
         public IBannerViewModel Banner
@@ -46,13 +47,13 @@
 
         public void GotoLoginPage()
         {
-            Banner = _loginPage.GetBanner();
+            Banner = _loginPage.Banner;
             MainPage = _loginPage;
         }
 
         public void GotoWorkspace()
         {
-            Banner = _workspacePage.GetBanner();
+            Banner = _workspacePage.Banner;
             MainPage = _workspacePage;
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace ElectionApp.ViewModel
 {
-    public interface IAddEditPageViewModel<in T> : IPageViewModel
+    public interface IAddEditPageViewModel<in T> : IWorkspacePageViewModel
     {
         void Save(T entity);
         void Cancel();

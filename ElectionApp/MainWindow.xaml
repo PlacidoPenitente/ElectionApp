@@ -4,9 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElectionApp"
+        xmlns:viewmodels="clr-namespace:ElectionApp.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="{Binding Title, UpdateSourceTrigger=PropertyChanged}" Height="450" Width="800">
+    <Window.DataContext>
+        <viewmodels:MainWindowViewModel/>
+    </Window.DataContext>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <ContentControl Grid.Row="0" Content="{Binding Banner, UpdateSourceTrigger=PropertyChanged}"/>
+        <ContentControl Grid.Row="1" Content="{Binding MainPage, UpdateSourceTrigger=PropertyChanged}"/>
+        <Grid Grid.Row="2">
+
+        </Grid>
     </Grid>
 </Window>

@@ -19,12 +19,17 @@
             return null;
         }
 
-        public IAddEditPageViewModel<T> CreateAddEditPage<T>(MainWindowViewModel mainWindowViewModel)
+        public IAddEditPageViewModel<T> CreateAddEditPage<T>(IWorkspaceViewModel mainWindowViewModel)
         {
             return null;
         }
 
-        public IViewPageViewModel<T> CreateViewPage<T>(MainWindowViewModel mainWindowViewModel)
+        public IViewPageViewModel<T> CreateViewPage<T>(IWorkspaceViewModel mainWindowViewModel)
+        {
+            return null;
+        }
+
+        public IWorkspaceViewModel CreateWorkspacePage(MainWindowViewModel mainWindowViewModel)
         {
             return null;
         }

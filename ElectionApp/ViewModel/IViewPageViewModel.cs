@@ -1,6 +1,6 @@
 ﻿namespace ElectionApp.ViewModel
 {
-    public interface IViewPageViewModel<in T> : IPageViewModel
+    public interface IViewPageViewModel<in T> : IWorkspacePageViewModel
     {
         void Load();
         void Edit(T entity);

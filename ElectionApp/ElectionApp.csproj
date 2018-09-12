@@ -55,17 +55,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ElectionAppConstants.cs" />
     <Compile Include="Model\ICandidate.cs" />
     <Compile Include="Model\IParty.cs" />
     <Compile Include="Model\IPosition.cs" />
     <Compile Include="Model\IVote.cs" />
     <Compile Include="Model\IVoter.cs" />
+    <Compile Include="ViewModel\IBannerViewModel.cs" />
+    <Compile Include="ViewModel\ILoginBannerViewModel.cs" />
     <Compile Include="ViewModel\ILoginPageViewModel.cs" />
     <Compile Include="ViewModel\IAddEditPageViewModel.cs" />
     <Compile Include="ViewModel\IPageViewModel.cs" />
     <Compile Include="ViewModel\IViewPageViewModel.cs" />
+    <Compile Include="ViewModel\IWorkspaceBannerViewModel.cs" />
+    <Compile Include="ViewModel\IWorkspaceViewModel.cs" />
+    <Compile Include="ViewModel\IWorkspacePageViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\Repository.cs" />
+    <Compile Include="ViewModel\WorkspaceViewModel.cs" />
+    <Compile Include="View\BannerView.xaml.cs">
+      <DependentUpon>BannerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginBannerView.xaml.cs">
+      <DependentUpon>LoginBannerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginPageView.xaml.cs">
+      <DependentUpon>LoginPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkspaceView.xaml.cs">
+      <DependentUpon>WorkspaceView.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -81,6 +100,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\BannerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginBannerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\LoginPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WorkspaceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\AccountType.cs" />
@@ -115,5 +150,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

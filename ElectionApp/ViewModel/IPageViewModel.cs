@@ -3,5 +3,6 @@
     public interface IPageViewModel
     {
         string Title { get; }
+        IBannerViewModel GetBanner();
     }
 }

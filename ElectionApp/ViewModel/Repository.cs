@@ -14,7 +14,17 @@
             
         }
 
-        public ILoginPageViewModel CreateLoginPage()
+        public ILoginPageViewModel CreateLoginPage(MainWindowViewModel mainWindowViewModel)
+        {
+            return null;
+        }
+
+        public IAddEditPageViewModel<T> CreateAddEditPage<T>(MainWindowViewModel mainWindowViewModel)
+        {
+            return null;
+        }
+
+        public IViewPageViewModel<T> CreateViewPage<T>(MainWindowViewModel mainWindowViewModel)
         {
             return null;
         }

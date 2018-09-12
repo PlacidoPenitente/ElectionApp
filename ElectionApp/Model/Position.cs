@@ -1,6 +1,6 @@
 ﻿namespace ElectionApp.Model
 {
-    public class Position
+    public class Position : IPosition
     {
         public int Id { get; set; }
         public string Name { get; set; }

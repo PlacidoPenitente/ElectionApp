@@ -2,7 +2,7 @@
 
 namespace ElectionApp.Model
 {
-    public class Voter
+    public class Voter : IVoter
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

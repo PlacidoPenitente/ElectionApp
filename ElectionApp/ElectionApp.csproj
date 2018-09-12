@@ -55,8 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\ICandidate.cs" />
+    <Compile Include="Model\IParty.cs" />
+    <Compile Include="Model\IPosition.cs" />
+    <Compile Include="Model\IVote.cs" />
+    <Compile Include="Model\IVoter.cs" />
     <Compile Include="ViewModel\ILoginPageViewModel.cs" />
-    <Compile Include="ViewModel\IUpdatePageViewModel.cs" />
+    <Compile Include="ViewModel\IAddEditPageViewModel.cs" />
     <Compile Include="ViewModel\IPageViewModel.cs" />
     <Compile Include="ViewModel\IViewPageViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />

@@ -63,12 +63,27 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ElectionAppConstants.cs" />
+    <Compile Include="Facade\UserFacade.cs" />
+    <Compile Include="Migrations\201809121506121_Voters.cs" />
+    <Compile Include="Migrations\201809121506121_Voters.Designer.cs">
+      <DependentUpon>201809121506121_Voters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809121608565_Candidates.cs" />
+    <Compile Include="Migrations\201809121608565_Candidates.Designer.cs">
+      <DependentUpon>201809121608565_Candidates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809121620032_AddedUsers.cs" />
+    <Compile Include="Migrations\201809121620032_AddedUsers.Designer.cs">
+      <DependentUpon>201809121620032_AddedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\AppDbContext.cs" />
     <Compile Include="Model\ICandidate.cs" />
     <Compile Include="Model\IParty.cs" />
     <Compile Include="Model\IPosition.cs" />
     <Compile Include="Model\IVote.cs" />
     <Compile Include="Model\IVoter.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="ViewModel\IBannerViewModel.cs" />
     <Compile Include="ViewModel\ILoginBannerViewModel.cs" />
     <Compile Include="ViewModel\ILoginPageViewModel.cs" />
@@ -146,6 +161,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201809121506121_Voters.resx">
+      <DependentUpon>201809121506121_Voters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809121608565_Candidates.resx">
+      <DependentUpon>201809121608565_Candidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809121620032_AddedUsers.resx">
+      <DependentUpon>201809121620032_AddedUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

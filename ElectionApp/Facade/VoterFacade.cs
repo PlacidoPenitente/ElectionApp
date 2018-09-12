@@ -62,36 +62,6 @@ namespace ElectionApp.Facade
             }
         }
 
-        public string Username
-        {
-            get => _voter.Username;
-            set
-            {
-                _voter.Username = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public string Password
-        {
-            get => _voter.Password;
-            set
-            {
-                _voter.Password = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public AccountType AccountType
-        {
-            get => _voter.AccountType;
-            set
-            {
-                _voter.AccountType = value;
-                OnPropertyChanged();
-            }
-        }
-
         public string Photo
         {
             get => _voter.Photo;

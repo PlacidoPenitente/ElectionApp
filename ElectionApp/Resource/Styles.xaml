@@ -9,4 +9,12 @@
     <DataTemplate DataType="{x:Type viewmodel:LoginBannerViewModel}">
         <view:LoginBannerView/>
     </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewmodel:WorkspaceViewModel}">
+        <view:WorkspaceView/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewmodel:WorkspaceBannerViewModel}">
+        <view:WorkspaceBannerView/>
+    </DataTemplate>
 </ResourceDictionary>

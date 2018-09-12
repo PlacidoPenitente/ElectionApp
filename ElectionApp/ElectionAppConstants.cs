@@ -19,5 +19,6 @@
         public const string AddressTooLong = "Address is too long.";
         public const string UsernameTooLong = "Username is too long.";
         public const string PasswordTooLong = "Password is too long.";
+        public const string Login = "Login";
     }
 }

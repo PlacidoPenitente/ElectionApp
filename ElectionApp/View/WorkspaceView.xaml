@@ -7,9 +7,6 @@
              xmlns:viewmodel="clr-namespace:ElectionApp.ViewModel"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.DataContext>
-        <viewmodel:WorkspaceViewModel/>
-    </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="225"/>

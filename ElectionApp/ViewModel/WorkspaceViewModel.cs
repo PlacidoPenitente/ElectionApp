@@ -14,8 +14,12 @@ namespace ElectionApp.ViewModel
         private readonly IViewPageViewModel<ICandidate> _candidateViewPage;
         private readonly IViewPageViewModel<IParty> _partyViewPage;
 
-        public WorkspaceViewModel()
+        private readonly MainWindowViewModel _mainWindowViewModel;
+
+        public WorkspaceViewModel(MainWindowViewModel mainWindowViewModel)
         {
+            _mainWindowViewModel = mainWindowViewModel;
+
             _voterAddEditPage = Repository.Instance.CreateAddEditPage<IVoter>(this);
             _candidateAddEditPage = Repository.Instance.CreateAddEditPage<ICandidate>(this);
             _partyAddEditPage = Repository.Instance.CreateAddEditPage<IParty>(this);
@@ -23,6 +27,8 @@ namespace ElectionApp.ViewModel
             _voterViewPage = Repository.Instance.CreateViewPage<IVoter>(this);
             _candidateViewPage = Repository.Instance.CreateViewPage<ICandidate>(this);
             _partyViewPage = Repository.Instance.CreateViewPage<IParty>(this);
+
+            Banner = Repository.Instance.CreateWorkspaceBanner();
         }
         
         public string Title { get; }

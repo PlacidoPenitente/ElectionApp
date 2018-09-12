@@ -33,5 +33,15 @@
         {
             return null;
         }
+
+        public IWorkspaceBannerViewModel CreateWorkspaceBanner()
+        {
+            return null;
+        }
+
+        public ILoginBannerViewModel CreateLoginBanner()
+        {
+            return null;
+        }
     }
 }

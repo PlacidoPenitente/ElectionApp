@@ -78,6 +78,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\AppDbContext.cs" />
+    <Compile Include="Model\Gender.cs" />
     <Compile Include="Model\ICandidate.cs" />
     <Compile Include="Model\IParty.cs" />
     <Compile Include="Model\IPosition.cs" />

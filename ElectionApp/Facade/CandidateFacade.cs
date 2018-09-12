@@ -91,5 +91,15 @@ namespace ElectionApp.Facade
                 OnPropertyChanged();
             }
         }
+
+        public Gender Gender
+        {
+            get => _candidate.Gender;
+            set
+            {
+                _candidate.Gender = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }

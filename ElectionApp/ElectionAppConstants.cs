@@ -13,5 +13,9 @@
         }
 
         public const string ProgramName = "Election App";
+        public const string FirstNameTooLong = "First Name is too long.";
+        public const string MiddleNameTooLong = "Middle Name is too long.";
+        public const string LastNameTooLong = "Last Name is too long.";
+        public const string AddressTooLong = "Address is too long.";
     }
 }

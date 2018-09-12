@@ -42,7 +42,7 @@ namespace ElectionApp.Facade
             }
         }
 
-        public DateTime Birthdate
+        public DateTime? Birthdate
         {
             get => _candidate.Birthdate;
             set

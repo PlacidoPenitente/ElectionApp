@@ -13,5 +13,6 @@ namespace ElectionApp.Model
         public DbSet<Voter> Voters { get; set; }
         public DbSet<Candidate> Candidates { get; set; }
         public DbSet<Party> Parties { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

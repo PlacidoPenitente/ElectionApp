@@ -88,6 +88,10 @@
     <Compile Include="Migrations\201809121637375_AddedAttributesToCandidate.Designer.cs">
       <DependentUpon>201809121637375_AddedAttributesToCandidate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809121644172_AddedUser.cs" />
+    <Compile Include="Migrations\201809121644172_AddedUser.Designer.cs">
+      <DependentUpon>201809121644172_AddedUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\AppDbContext.cs" />
     <Compile Include="Model\Gender.cs" />
@@ -191,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809121637375_AddedAttributesToCandidate.resx">
       <DependentUpon>201809121637375_AddedAttributesToCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809121644172_AddedUser.resx">
+      <DependentUpon>201809121644172_AddedUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
